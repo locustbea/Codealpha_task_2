@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Board</title>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('job_list') }}">Job Listings</a> |
+        <a href="{{ url_for('profile') }}">Profile</a>
+    </nav>
+    <div>
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
